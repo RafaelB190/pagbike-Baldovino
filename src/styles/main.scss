@@ -9,25 +9,24 @@ body {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; // Cambié 'center' a 'flex-start' para mejor alineación en la mayoría de pantallas
+  justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
-  padding-top: 20px; // Añadí un pequeño margen en la parte superior para evitar que el contenido se pegue al borde
+  padding-top: 20px;
 }
 
 h1,
 h2 {
   text-align: center;
   color: #333;
-  margin-bottom: 20px; // Añadí un margen inferior para separar los títulos del contenido
+  margin-bottom: 20px;
 }
 
-/* Encabezado */
 header {
   width: 100%;
   background: url("images/plantillamtb.png") no-repeat center center;
   background-size: cover;
-  height: 200px; // Ajusta la altura del banner
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,13 +35,12 @@ header {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Carrusel */
 .carousel {
   position: relative;
   width: 100%;
   max-width: 1000px;
   margin: 20px auto;
-  border-radius: 8px; // Añadí bordes redondeados para un mejor aspecto
+  border-radius: 8px;
 }
 
 .carousel-item {
@@ -69,20 +67,16 @@ header {
   border: none;
   padding: 10px;
   cursor: pointer;
-  border-radius: 50%; // Hizo los botones redondeados
+  border-radius: 50%;
 }
 
 .carousel-button:hover {
   background: rgba(0, 0, 0, 0.8);
 }
 
-/* Estilo para la lista de productos */
 #product-list {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(300px, 1fr)
-  ); /* Hacer que las tarjetas se acomoden en columnas */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
   max-width: 1200px;
@@ -95,14 +89,14 @@ header {
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px; // Añadí bordes redondeados a las tarjetas
+  border-radius: 8px;
 }
 
 .product-card img {
   width: 100%;
   height: auto;
   max-height: 200px;
-  border-radius: 8px; // Añadí bordes redondeados a las imágenes
+  border-radius: 8px;
 }
 
 .product-card h3 {
@@ -112,10 +106,9 @@ header {
 
 .product-card p {
   font-size: 1em;
-  color: #555; // Un tono gris para el texto
+  color: #555;
 }
 
-/* Páginas secundarias */
 .subpage {
   display: none;
   width: 100%;
@@ -128,7 +121,6 @@ header {
   margin: 0 auto;
 }
 
-/* Contacto y demás formularios */
 form {
   max-width: 600px;
   width: 100%;
@@ -158,7 +150,6 @@ form button:hover {
   background-color: #0056b3;
 }
 
-/* Pie de página */
 footer {
   background-color: #343a40;
   color: white;

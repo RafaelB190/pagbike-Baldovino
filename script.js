@@ -24,12 +24,12 @@ function showSlide(index) {
 }
 
 function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length; // Mueve a la siguiente diapositiva
+  currentSlide = (currentSlide + 1) % slides.length;
   showSlide(currentSlide);
 }
 
 function prevSlide() {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length; // Mueve a la diapositiva anterior
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
   showSlide(currentSlide);
 }
 
@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Productos
 const products = [
   { name: "Trek Marlin", price: 1200, image: "./images/trek-marlin.jpeg" },
   {
@@ -98,7 +97,6 @@ function displayProducts() {
 
 displayProducts();
 
-// Eventos
 const events = [
   "Carrera MTB en las Sierras - 15 de Enero",
   "Exhibición de Nuevos Modelos - 5 de Febrero",
@@ -113,7 +111,6 @@ events.forEach((event) => {
   eventList.appendChild(eventItem);
 });
 
-// Formulario de contacto
 const contactForm = document.getElementById("contact-form");
 
 contactForm.addEventListener("submit", (e) => {
