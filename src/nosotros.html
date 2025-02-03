@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosotros - BIKEMTB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/tailwind.css" />
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <nav class="bg-blue-600 text-white p-4">
+      <ul class="flex justify-around">
+        <li><a href="index.html" class="hover:underline">Inicio</a></li>
+        <li><a href="catalogo.html" class="hover:underline">Catálogo</a></li>
+        <li><a href="eventos.html" class="hover:underline">Eventos</a></li>
+        <li>
+          <a href="promociones.html" class="hover:underline">Promociones</a>
+        </li>
+        <li><a href="nosotros.html" class="hover:underline">Nosotros</a></li>
+      </ul>
+    </nav>
+
+    <main class="max-w-4xl mx-auto py-8">
+      <section class="bg-white p-6 shadow rounded-lg">
+        <h1 class="text-3xl font-bold mb-4">Sobre Nosotros</h1>
+        <p class="mb-4">
+          Somos una empresa de Córdoba, Argentina, con más de 20 años de
+          trayectoria en el mundo del ciclismo. Nos especializamos en bicicletas
+          MTB y componentes de alta calidad, ofreciendo asesoramiento y soporte
+          para ciclistas de todos los niveles; tanto en nuestro local como en
+          eventos importantes.
+        </p>
+        <a
+          href="eventos.html"
+          class="block text-center bg-blue-600 text-white py-2 rounded"
+          >Ver Eventos</a
+        >
+      </section>
+
+      <section class="bg-white p-6 shadow rounded-lg mt-8">
+        <h2 class="text-2xl font-bold mb-4">Comuníquese con Nosotros</h2>
+        <form class="space-y-4">
+          <div>
+            <label for="nombre" class="block text-sm font-semibold"
+              >Nombre</label
+            >
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              class="w-full p-2 border rounded"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-semibold">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full p-2 border rounded"
+              required
+            />
+          </div>
+          <div>
+            <label for="lugar" class="block text-sm font-semibold"
+              >Lugar de Residencia</label
+            >
+            <input
+              type="text"
+              id="lugar"
+              name="lugar"
+              class="w-full p-2 border rounded"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white py-2 rounded"
+          >
+            Enviar
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
+      <div class="social-links mb-2">
+        <a
+          href="https://facebook.com/Tiendabike"
+          target="_blank"
+          class="mr-4 hover:underline"
+          >Facebook</a
+        >
+        <a
+          href="https://instagram.com/Tiendabike"
+          target="_blank"
+          class="hover:underline"
+          >Instagram</a
+        >
+      </div>
+      <div class="contact-info mb-2">
+        <p>Dirección: Calle Bike 123</p>
+        <p>Celular: +123 456 789</p>
+      </div>
+      <p>© 2024 BikeMTB. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
