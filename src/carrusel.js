@@ -15,11 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const slide = document.createElement("div");
     slide.classList.add("carousel-slide");
     if (index === 0) slide.classList.add("active");
-
     slide.innerHTML = `
-        <img src="../public/img/${bici.img}" alt="${bici.nombre}" class="w-full h-64 object-cover cursor-pointer">
-        <h3 class="text-center text-lg font-bold mt-2">${bici.nombre}</h3>
-      `;
+      <img src="../public/img/${bici.img}" alt="${bici.nombre}" class="w-full h-64 object-cover cursor-pointer">
+      <h3 class="text-center text-lg font-bold mt-2">${bici.nombre}</h3>
+    `;
 
     slide.addEventListener("click", () => {
       window.location.href = `detalles.html?producto=${bici.img}`;
@@ -33,7 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showSlide(index) {
     slides.forEach((slide, i) => {
-      slide.classList.toggle("active", i === index);
+      if (i === index) {
+        slide.classList.add("active");
+      } else {
+        slide.classList.remove("active");
+      }
     });
   }
 
