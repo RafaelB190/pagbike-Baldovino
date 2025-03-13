@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     slide.classList.add("carousel-slide");
     if (index === 0) slide.classList.add("active");
     slide.innerHTML = `
-      <img src="../public/img/${bike.img}" alt="${bike.name}" class="w-full h-auto object-cover cursor-pointer transition-opacity duration-500">
+      <img src="./public/img/${bike.img}" alt="${bike.name}" class="w-full h-auto object-cover cursor-pointer transition-opacity duration-500">
       <h3 class="text-center text-lg font-bold mt-2">${bike.name}</h3>
     `;
 

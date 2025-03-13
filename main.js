@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (productos[productoImg]) {
       document.getElementById(
         "producto-img"
-      ).src = `../public/img/${productoImg}`;
+      ).src = `./public/img/${productoImg}`;
 
       document.getElementById("producto-img").alt =
         productos[productoImg].nombre;
@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
     bicicletas.forEach((bici) => {
       const biciHTML = `
       <div class="product-card">
-        <img src="../public/img/${bici.img}" class="w-full h-48 object-cover" alt="${bici.nombre}">
+        <img src="./public/img/${bici.img}" class="w-full h-48 object-cover" alt="${bici.nombre}">
         <div class="p-4">
           <h2 class="text-xl font-bold">${bici.nombre}</h2>
           <p class="text-gray-700 mt-2">${bici.descripcion}</p>
