@@ -1,9 +1,12 @@
 {
-  "dependencies": {
-    "sass": "^1.83.0"
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.13"
   },
   "scripts": {
-    "build-css": "sass src/styles/main.scss dist/styles/main.css",
-    "watch-css": "sass --watch src/styles.scss:dist/styles.css"
+    "build:css": "tailwindcss -i ./public/styles/styles.css -o ./public/styles/output.css",
+    "watch:css": "tailwindcss -i ./public/styles/styles.css -o ./public/styles/output.css --watch",
+    "prod:css": "tailwindcss -i ./public/styles/styles.css -o ./public/styles/output.css --minify"
   }
 }

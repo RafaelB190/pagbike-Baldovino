@@ -3,42 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BIKEMTB</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BikeMTB</title>
     <script src="./carrusel.js"></script>
-    <link rel="stylesheet" href="./styles/tailwind.css" />
-    <style>
-      .carousel {
-        overflow: hidden;
-      }
-      .carousel-slide {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-      }
-      .carousel-slide.active {
-        opacity: 1;
-      }
-    </style>
+    <link rel="stylesheet" href="../public/styles/styles.css" />
   </head>
-  <body class="bg-gray-100 text-gray-900">
-    <nav class="bg-blue-600 text-white p-4">
-      <ul class="flex justify-around">
-        <li><a href="catalogo.html" class="hover:underline">Catálogo</a></li>
-        <li><a href="eventos.html" class="hover:underline">Eventos</a></li>
-        <li>
-          <a href="promociones.html" class="hover:underline">Promociones</a>
-        </li>
-        <li><a href="nosotros.html" class="hover:underline">Nosotros</a></li>
-      </ul>
-    </nav>
+  <body
+    class="bg-cover bg-center bg-gray-100 font-sans flex flex-col min-h-screen mx-auto"
+    style="background-image: url('/public/img/plantillamtb2.png')"
+  >
+    <header class="text-yellow-500 p-4">
+      <nav class="flex justify-between items-center">
+        <a href="index.html" class="text-2xl">TiendaBike</a>
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:text-gray-400">Inicio</a></li>
+          <li>
+            <a href="eventos.html" class="hover:text-gray-400">Eventos</a>
+          </li>
+          <li>
+            <a href="catalogo.html" class="hover:text-gray-400">Catálogo</a>
+          </li>
+          <li>
+            <a href="nosotros.html" class="hover:text-gray-400">Nosotros</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="carousel relative w-full max-w-4xl mx-auto mt-6">
-      <div id="carrusel-inner"></div>
+    <div
+      class="carrusel-container w-full max-w-4xl mx-auto mt-6 md:max-w-6xl lg:max-w-7xl"
+    >
+      <div id="carrusel-inner" class="w-full h-64 relative"></div>
       <div class="absolute inset-0 flex justify-between items-center px-4">
         <button id="prev-btn" class="bg-gray-800 text-white px-3 py-1">
           Anterior
@@ -50,17 +44,21 @@
     </div>
     <script src="./carrusel.js"></script>
 
-    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
+    <footer
+      class="bg-gray-800 text-yellow-500 text-center py-4 mt-9 sticky top-[100vh]"
+    >
       <div class="social-links mb-2">
         <a
           href="https://facebook.com/Tiendabike"
           target="_blank"
+          rel="noopener"
           class="mr-4 hover:underline"
           >Facebook</a
         >
         <a
           href="https://instagram.com/Tiendabike"
           target="_blank"
+          rel="noopener"
           class="hover:underline"
           >Instagram</a
         >
@@ -71,6 +69,5 @@
       </div>
       <p>© 2024 BikeMTB. Todos los derechos reservados.</p>
     </footer>
-    <script src="./carrusel.js"></script>
   </body>
 </html>

@@ -1,30 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const carruselContainer = document.getElementById("carrusel-container");
-  const carruselInner = document.getElementById("carrusel-inner");
+  const carouselInner = document.getElementById("carousel-inner");
 
-  const bicicletasCarrusel = [
-    { img: "bh-atom.jpeg", nombre: "BH Atom" },
-    { img: "scott-aspect.jpeg", nombre: "Scott Aspect" },
-    { img: "trek-marlin.jpeg", nombre: "Trek Marlin" },
-    { img: "vairo-x3.jpeg", nombre: "Vairo X3" },
-    { img: "venzo-nitro.jpeg", nombre: "Venzo Nitro" },
-    { img: "slp-r5.jpeg", nombre: "SLP R5" },
+  if (!carouselInner) {
+    console.error("Element with id 'carousel-inner' not found.");
+    return;
+  }
+
+  const bikesCarousel = [
+    { img: "bh-atom.jpeg", name: "BH Atom" },
+    { img: "scott-aspect.jpeg", name: "Scott Aspect" },
+    { img: "trek-marlin.jpeg", name: "Trek Marlin" },
+    { img: "vairo-x3.jpeg", name: "Vairo X3" },
+    { img: "venzo-nitro.jpeg", name: "Venzo Nitro" },
+    { img: "slp-r5.jpeg", name: "SLP R5" },
   ];
 
-  bicicletasCarrusel.forEach((bici, index) => {
+  bikesCarousel.forEach((bike, index) => {
     const slide = document.createElement("div");
     slide.classList.add("carousel-slide");
     if (index === 0) slide.classList.add("active");
     slide.innerHTML = `
-      <img src="../public/img/${bici.img}" alt="${bici.nombre}" class="w-full h-64 object-cover cursor-pointer">
-      <h3 class="text-center text-lg font-bold mt-2">${bici.nombre}</h3>
-    `;
+          <img src="/public/img/${bike.img}" alt="${bike.name}" class="w-full h-auto object-cover cursor-pointer transition-opacity duration-500">
+          <h3 class="text-center text-lg font-bold mt-2">${bike.name}</h3>
+        `;
 
     slide.addEventListener("click", () => {
-      window.location.href = `detalles.html?producto=${bici.img}`;
+      window.location.href = `details.html?product=${bike.name}`;
     });
 
-    carruselInner.appendChild(slide);
+    carouselInner.appendChild(slide);
   });
 
   let currentIndex = 0;

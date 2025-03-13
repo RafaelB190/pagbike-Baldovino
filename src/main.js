@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (nombre && email && lugar) {
         alert(
-          `Gracias por contactarnos, ${nombre}. Te responderemos pronto a ${email}.`
+          `Gracias por contactarnos, ${nombre}. Te responderemos pronto por correo electrónico a ${email}.`
         );
         contactForm.reset();
       } else {
@@ -135,6 +135,8 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById(
         "producto-precio"
       ).textContent = `Precio: ${productos[productoImg].precio}`;
+    } else {
+      console.log("No se encontró parámetro o no existe ese producto");
     }
   }
 
@@ -221,7 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
     bicicletas.forEach((bici) => {
       const biciHTML = `
       <div class="bg-white p-4 shadow rounded-lg text-center">
-        <img src="../public/img${bici.img}" class="w-full h-48 object-cover mb-2" alt="${bici.nombre}">
+        <img src="../public/img/${bici.img}" class="w-full h-48 object-cover mb-2" alt="${bici.nombre}">
         <h2 class="text-lg font-bold">${bici.nombre}</h2>
         <p class="text-sm text-gray-700">${bici.descripcion}</p>
         <a href="./detalles.html?producto=${bici.img}" class="block bg-blue-600 text-white py-2 mt-4 rounded">Ver más</a>
