@@ -3,36 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eventos - TiendaBike</title>
-    <script src="./main.js" defer></script>
+    <title>Eventos - BikeMTB</title>
     <link rel="stylesheet" href="../public/styles/styles.css" />
   </head>
-  <body class="bg-gray-100 font-sans">
-    <header class="bg-gray-800 text-white p-4">
-      <nav class="flex justify-between items-center">
-        <a href="index.html" class="text-2xl">TiendaBike</a>
-        <ul class="flex space-x-4">
-          <li><a href="index.html" class="hover:text-gray-400">Inicio</a></li>
-          <li>
-            <a href="eventos.html" class="hover:text-gray-400">Eventos</a>
-          </li>
-          <li>
-            <a href="catalogo.html" class="hover:text-gray-400">Catálogo</a>
-          </li>
-          <li>
-            <a href="nosotros.html" class="hover:text-gray-400">Nosotros</a>
-          </li>
-        </ul>
+  <body>
+    <header class="navbar">
+      <nav class="container mx-auto">
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="text-2xl font-bold text-yellow-500"
+            >BikeMTB</a
+          >
+          <ul class="navbar-menu">
+            <li><a href="index.html" class="navbar-link">Inicio</a></li>
+            <li><a href="eventos.html" class="navbar-link">Eventos</a></li>
+            <li><a href="catalogo.html" class="navbar-link">Catálogo</a></li>
+            <li>
+              <a href="promociones.html" class="navbar-link">Promociones</a>
+            </li>
+            <li><a href="nosotros.html" class="navbar-link">Nosotros</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-    <main class="container mx-auto p-8">
-      <h1 class="text-4xl font-bold mb-6 text-center">
+    <main class="main-content container mx-auto px-4 py-8">
+      <h1 class="text-4xl font-bold mb-8 text-center">
         Eventos de Ciclismo en Argentina
       </h1>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+        >
           <h2 class="text-xl font-semibold mb-2">
             Cross Country - Sierras de Córdoba
           </h2>
@@ -46,7 +48,9 @@
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+        >
           <h2 class="text-xl font-semibold mb-2">Cross Country - Jujuy</h2>
           <p class="text-gray-700 mb-4">Fecha: 5 de marzo, 2025</p>
           <p class="text-gray-600 mb-4">Ubicación: Jujuy</p>
@@ -56,7 +60,9 @@
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+        >
           <h2 class="text-xl font-semibold mb-2">Descenso - Mendoza</h2>
           <p class="text-gray-700 mb-4">Fecha: 19 de marzo, 2025</p>
           <p class="text-gray-600 mb-4">Ubicación: Mendoza</p>
@@ -66,7 +72,9 @@
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+        >
           <h2 class="text-xl font-semibold mb-2">Enduro - Catamarca</h2>
           <p class="text-gray-700 mb-4">Fecha: 25 de abril, 2025</p>
           <p class="text-gray-600 mb-4">Ubicación: Catamarca</p>
@@ -76,7 +84,9 @@
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+        >
           <h2 class="text-xl font-semibold mb-2">Enduro - Bariloche</h2>
           <p class="text-gray-700 mb-4">Fecha: 8 de mayo, 2025</p>
           <p class="text-gray-600 mb-4">Ubicación: Bariloche</p>
@@ -89,8 +99,48 @@
       </div>
     </main>
 
-    <footer class="bg-gray-800 text-white p-4 text-center">
-      <p>&copy; 2025 TiendaBike. Todos los derechos reservados.</p>
+    <footer class="text-center">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+          <div>
+            <h3 class="text-xl font-bold mb-4">Contacto</h3>
+            <p>Dirección: Calle Bike 123</p>
+            <p>Celular: +123 456 789</p>
+            <p>Email: info@bikemtb.com</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+            <div class="flex justify-center gap-4">
+              <a
+                href="https://facebook.com/Tiendabike"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-yellow-500 transition"
+                >Facebook</a
+              >
+              <a
+                href="https://instagram.com/Tiendabike"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-yellow-500 transition"
+                >Instagram</a
+              >
+              <a
+                href="https://twitter.com/Tiendabike"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-yellow-500 transition"
+                >Twitter</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 pt-4">
+          <p>© 2024 BikeMTB. Todos los derechos reservados.</p>
+        </div>
+      </div>
     </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>

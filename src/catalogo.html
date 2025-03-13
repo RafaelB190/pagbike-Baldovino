@@ -4,46 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catálogo - BIKEMTB</title>
-    <script src="./main.js" defer></script>
-
     <link rel="stylesheet" href="../public/styles/styles.css" />
   </head>
-  <body class="bg-gray-100 text-gray-900">
-    <nav class="bg-blue-600 text-white p-4">
-      <ul class="flex justify-around">
-        <li><a href="index.html" class="hover:underline">Inicio</a></li>
-        <li><a href="eventos.html" class="hover:underline">Eventos</a></li>
-        <li>
-          <a href="promociones.html" class="hover:underline">Promociones</a>
-        </li>
-        <li><a href="nosotros.html" class="hover:underline">Nosotros</a></li>
-      </ul>
-    </nav>
-    <div
-      id="catalogo-container"
-      class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4"
-    ></div>
+  <body>
+    <header class="navbar">
+      <nav class="container mx-auto">
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="text-2xl font-bold text-yellow-500"
+            >BikeMTB</a
+          >
+          <ul class="navbar-menu">
+            <li><a href="index.html" class="navbar-link">Inicio</a></li>
+            <li><a href="eventos.html" class="navbar-link">Eventos</a></li>
+            <li><a href="catalogo.html" class="navbar-link">Catálogo</a></li>
+            <li>
+              <a href="promociones.html" class="navbar-link">Promociones</a>
+            </li>
+            <li><a href="nosotros.html" class="navbar-link">Nosotros</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
-      <div class="social-links mb-2">
-        <a
-          href="https://facebook.com/Tiendabike"
-          target="_blank"
-          class="mr-4 hover:underline"
-          >Facebook</a
-        >
-        <a
-          href="https://instagram.com/Tiendabike"
-          target="_blank"
-          class="hover:underline"
-          >Instagram</a
-        >
+    <main class="main-content container mx-auto px-4 py-8">
+      <h1 class="text-3xl font-bold text-center mb-8">Nuestro Catálogo</h1>
+      <div
+        id="catalogo-container"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      ></div>
+    </main>
+
+    <footer class="text-center">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+          <div>
+            <h3 class="text-xl font-bold mb-4">Contacto</h3>
+            <p>Dirección: Calle Bike 123</p>
+            <p>Celular: +123 456 789</p>
+            <p>Email: info@bikemtb.com</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+            <div class="flex justify-center gap-4">
+              <a
+                href="https://facebook.com/Tiendabike"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-yellow-500 transition"
+                >Facebook</a
+              >
+              <a
+                href="https://instagram.com/Tiendabike"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-yellow-500 transition"
+                >Instagram</a
+              >
+              <a
+                href="https://twitter.com/Tiendabike"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-yellow-500 transition"
+                >Twitter</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 pt-4">
+          <p>© 2024 BikeMTB. Todos los derechos reservados.</p>
+        </div>
       </div>
-      <div class="contact-info mb-2">
-        <p>Dirección: Calle Bike 123</p>
-        <p>Celular: +123 456 789</p>
-      </div>
-      <p>© 2024 BikeMTB. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>

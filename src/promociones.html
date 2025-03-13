@@ -6,110 +6,229 @@
     <title>Promociones - BIKEMTB</title>
     <link rel="stylesheet" href="../public/styles/styles.css" />
   </head>
-  <body class="bg-gray-100 text-gray-900">
-    <nav class="bg-blue-600 text-white p-4">
-      <ul class="flex justify-around">
-        <li><a href="index.html" class="hover:underline">Inicio</a></li>
-        <li><a href="catalogo.html" class="hover:underline">Catálogo</a></li>
-        <li><a href="eventos.html" class="hover:underline">Eventos</a></li>
-        <li>
-          <a href="promociones.html" class="hover:underline">Promociones</a>
-        </li>
-        <li><a href="nosotros.html" class="hover:underline">Nosotros</a></li>
-      </ul>
-    </nav>
+  <body>
+    <header class="navbar">
+      <nav class="container mx-auto">
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="text-2xl font-bold text-yellow-500"
+            >BikeMTB</a
+          >
+          <ul class="navbar-menu">
+            <li><a href="index.html" class="navbar-link">Inicio</a></li>
+            <li><a href="eventos.html" class="navbar-link">Eventos</a></li>
+            <li><a href="catalogo.html" class="navbar-link">Catálogo</a></li>
+            <li>
+              <a href="promociones.html" class="navbar-link">Promociones</a>
+            </li>
+            <li><a href="nosotros.html" class="navbar-link">Nosotros</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <main class="max-w-6xl mx-auto py-8">
-      <h1 class="text-3xl font-bold text-center mb-6">
+    <main class="main-content container mx-auto px-4 py-8">
+      <h1 class="text-3xl font-bold text-center mb-8">
         Promociones Especiales
       </h1>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white p-4 shadow rounded-lg text-center">
-          <img
-            src="../public/img/bh-ultimate.jpeg"
-            class="w-full h-48 object-cover mb-4"
-            alt="BH Ultimate"
-          />
-          <h2 class="text-xl font-semibold">BH Ultimate</h2>
-          <p class="mt-2">15% de descuento en modelos seleccionados.</p>
+        <div class="product-card promo-card">
+          <div class="relative">
+            <img
+              src="../public/img/bh-ultimate.jpeg"
+              class="w-full h-48 object-cover"
+              alt="BH Ultimate"
+            />
+            <div
+              class="absolute top-0 right-0 bg-red-600 text-white px-3 py-1 rounded-bl-lg font-bold"
+            >
+              -15%
+            </div>
+          </div>
+          <div class="p-4">
+            <h2 class="text-xl font-semibold">BH Ultimate</h2>
+            <p class="mt-2">15% de descuento en modelos seleccionados.</p>
+            <a
+              href="detalles.html?producto=bh-ultimate.jpeg"
+              class="block text-center bg-blue-600 text-white py-2 rounded mt-4 hover:bg-blue-700 transition"
+            >
+              Ver detalles
+            </a>
+          </div>
         </div>
 
-        <div class="bg-white p-4 shadow rounded-lg text-center">
-          <img
-            src="../public/img/scott-scale.jpeg"
-            class="w-full h-48 object-cover mb-4"
-            alt="Scott Scale"
-          />
-          <h2 class="text-xl font-semibold">Scott Scale</h2>
-          <p class="mt-2">
-            10% de descuento + 20% extra en inscripciones de eventos.
-          </p>
+        <div class="product-card promo-card">
+          <div class="relative">
+            <img
+              src="../public/img/scott-scale.jpeg"
+              class="w-full h-48 object-cover"
+              alt="Scott Scale"
+            />
+            <div
+              class="absolute top-0 right-0 bg-red-600 text-white px-3 py-1 rounded-bl-lg font-bold"
+            >
+              -10%
+            </div>
+          </div>
+          <div class="p-4">
+            <h2 class="text-xl font-semibold">Scott Scale</h2>
+            <p class="mt-2">
+              10% de descuento + 20% extra en inscripciones de eventos.
+            </p>
+            <a
+              href="detalles.html?producto=scott-scale.jpeg"
+              class="block text-center bg-blue-600 text-white py-2 rounded mt-4 hover:bg-blue-700 transition"
+            >
+              Ver detalles
+            </a>
+          </div>
         </div>
 
-        <div class="bg-white p-4 shadow rounded-lg text-center">
-          <img
-            src="../public/img/slp-x3.jpeg"
-            class="w-full h-48 object-cover mb-4"
-            alt="SLP X3"
-          />
-          <h2 class="text-xl font-semibold">SLP X3</h2>
-          <p class="mt-2">12% de descuento en modelos de la línea X.</p>
+        <div class="product-card promo-card">
+          <div class="relative">
+            <img
+              src="../public/img/slp-x3.jpeg"
+              class="w-full h-48 object-cover"
+              alt="SLP X3"
+            />
+            <div
+              class="absolute top-0 right-0 bg-red-600 text-white px-3 py-1 rounded-bl-lg font-bold"
+            >
+              -12%
+            </div>
+          </div>
+          <div class="p-4">
+            <h2 class="text-xl font-semibold">SLP X3</h2>
+            <p class="mt-2">12% de descuento en modelos de la línea X.</p>
+            <a
+              href="detalles.html?producto=slp-x3.jpeg"
+              class="block text-center bg-blue-600 text-white py-2 rounded mt-4 hover:bg-blue-700 transition"
+            >
+              Ver detalles
+            </a>
+          </div>
         </div>
 
-        <div class="bg-white p-4 shadow rounded-lg text-center">
-          <img
-            src="../public/img/trek-procaliber.jpeg"
-            class="w-full h-48 object-cover mb-4"
-            alt="Trek Procaliber"
-          />
-          <h2 class="text-xl font-semibold">Trek Procaliber</h2>
-          <p class="mt-2">10% de descuento en modelos de carbono.</p>
+        <div class="product-card promo-card">
+          <div class="relative">
+            <img
+              src="../public/img/trek-procaliber.jpeg"
+              class="w-full h-48 object-cover"
+              alt="Trek Procaliber"
+            />
+            <div
+              class="absolute top-0 right-0 bg-red-600 text-white px-3 py-1 rounded-bl-lg font-bold"
+            >
+              -10%
+            </div>
+          </div>
+          <div class="p-4">
+            <h2 class="text-xl font-semibold">Trek Procaliber</h2>
+            <p class="mt-2">10% de descuento en modelos de carbono.</p>
+            <a
+              href="detalles.html?producto=trek-procaliber.jpeg"
+              class="block text-center bg-blue-600 text-white py-2 rounded mt-4 hover:bg-blue-700 transition"
+            >
+              Ver detalles
+            </a>
+          </div>
         </div>
 
-        <div class="bg-white p-4 shadow rounded-lg text-center">
-          <img
-            src="../public/img/vairo-xr.jpeg"
-            class="w-full h-48 object-cover mb-4"
-            alt="Vairo XR"
-          />
-          <h2 class="text-xl font-semibold">Vairo XR</h2>
-          <p class="mt-2">15% de descuento en modelos de competición.</p>
+        <div class="product-card promo-card">
+          <div class="relative">
+            <img
+              src="../public/img/vairo-xr.jpeg"
+              class="w-full h-48 object-cover"
+              alt="Vairo XR"
+            />
+            <div
+              class="absolute top-0 right-0 bg-red-600 text-white px-3 py-1 rounded-bl-lg font-bold"
+            >
+              -15%
+            </div>
+          </div>
+          <div class="p-4">
+            <h2 class="text-xl font-semibold">Vairo XR</h2>
+            <p class="mt-2">15% de descuento en modelos de competición.</p>
+            <a
+              href="detalles.html?producto=vairo-xr.jpeg"
+              class="block text-center bg-blue-600 text-white py-2 rounded mt-4 hover:bg-blue-700 transition"
+            >
+              Ver detalles
+            </a>
+          </div>
         </div>
 
-        <div class="bg-white p-4 shadow rounded-lg text-center">
-          <img
-            src="../public/img/venzo-raptor.jpeg"
-            class="w-full h-48 object-cover mb-4"
-            alt="Venzo Raptor"
-          />
-          <h2 class="text-xl font-semibold">Venzo Raptor</h2>
-          <p class="mt-2">
-            10% de descuento + 20% extra en inscripciones de eventos.
-          </p>
+        <div class="product-card promo-card">
+          <div class="relative">
+            <img
+              src="../public/img/venzo-raptor.jpeg"
+              class="w-full h-48 object-cover"
+              alt="Venzo Raptor"
+            />
+            <div
+              class="absolute top-0 right-0 bg-red-600 text-white px-3 py-1 rounded-bl-lg font-bold"
+            >
+              -10%
+            </div>
+          </div>
+          <div class="p-4">
+            <h2 class="text-xl font-semibold">Venzo Raptor</h2>
+            <p class="mt-2">
+              10% de descuento + 20% extra en inscripciones de eventos.
+            </p>
+            <a
+              href="detalles.html?producto=venzo-raptor.jpeg"
+              class="block text-center bg-blue-600 text-white py-2 rounded mt-4 hover:bg-blue-700 transition"
+            >
+              Ver detalles
+            </a>
+          </div>
         </div>
       </div>
     </main>
 
-    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
-      <div class="social-links mb-2">
-        <a
-          href="https://facebook.com/Tiendabike"
-          target="_blank"
-          class="mr-4 hover:underline"
-          >Facebook</a
-        >
-        <a
-          href="https://instagram.com/Tiendabike"
-          target="_blank"
-          class="hover:underline"
-          >Instagram</a
-        >
+    <footer class="text-center">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+          <div>
+            <h3 class="text-xl font-bold mb-4">Contacto</h3>
+            <p>Dirección: Calle Bike 123</p>
+            <p>Celular: +123 456 789</p>
+            <p>Email: info@bikemtb.com</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+            <div class="flex justify-center gap-4">
+              <a
+                href="https://facebook.com/Tiendabike"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-yellow-500 transition"
+                >Facebook</a
+              >
+              <a
+                href="https://instagram.com/Tiendabike"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-yellow-500 transition"
+                >Instagram</a
+              >
+              <a
+                href="https://twitter.com/Tiendabike"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-yellow-500 transition"
+                >Twitter</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 pt-4">
+          <p>© 2024 BikeMTB. Todos los derechos reservados.</p>
+        </div>
       </div>
-      <div class="contact-info mb-2">
-        <p>Dirección: Calle Bike 123</p>
-        <p>Celular: +123 456 789</p>
-      </div>
-      <p>© 2024 BikeMTB. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>

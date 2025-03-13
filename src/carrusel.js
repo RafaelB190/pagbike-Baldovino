@@ -20,12 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
     slide.classList.add("carousel-slide");
     if (index === 0) slide.classList.add("active");
     slide.innerHTML = `
-          <img src="/public/img/${bike.img}" alt="${bike.name}" class="w-full h-auto object-cover cursor-pointer transition-opacity duration-500">
-          <h3 class="text-center text-lg font-bold mt-2">${bike.name}</h3>
-        `;
+      <img src="../public/img/${bike.img}" alt="${bike.name}" class="w-full h-auto object-cover cursor-pointer transition-opacity duration-500">
+      <h3 class="text-center text-lg font-bold mt-2">${bike.name}</h3>
+    `;
 
     slide.addEventListener("click", () => {
-      window.location.href = `details.html?product=${bike.name}`;
+      window.location.href = `detalles.html?producto=${bike.img}`;
     });
 
     carouselInner.appendChild(slide);
@@ -44,15 +44,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  document.getElementById("prev-btn").addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlide(currentIndex);
-  });
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
 
-  document.getElementById("next-btn").addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
-  });
+  if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    });
+  }
 
   setInterval(() => {
     currentIndex = (currentIndex + 1) % slides.length;
